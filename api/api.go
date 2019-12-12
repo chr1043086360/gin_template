@@ -1,21 +1,17 @@
 /*
   Author ： CHR_崔贺然
   Time ： 2019.11.14
-<<<<<<< HEAD
+
   Description ： 所有的接口都在这里定义，还有中间件的启动,注意顺序不能改变
-=======
-  Description ： 所有的接口都在这里定义，还有中间件的启动
->>>>>>> b9df877fbb9c8e1674afc8be5b3ec0a86f57fbbd
+
 */
 
 package api
 
 import (
-<<<<<<< HEAD
+
 	// "io"
-=======
-	"io"
->>>>>>> b9df877fbb9c8e1674afc8be5b3ec0a86f57fbbd
+
 	// "time"
 
 	// "log"
@@ -57,7 +53,7 @@ func Api() *gin.Engine {
 	r.Use(middleware.Session(os.Getenv("SESSION_SECRET")))
 	r.Use(middleware.Cors())
 	// 禁用控制台颜色
-	gin.DisableConsoleColor()
+	// gin.DisableConsoleColor()
 
 	// 创建记录日志的文件
 	// f, _ := os.Create("gin.log")
