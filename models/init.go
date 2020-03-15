@@ -1,4 +1,4 @@
-package model
+package models
 
 import (
 	"fmt"
@@ -24,20 +24,12 @@ func Datebase(connString string) {
 	db.DB().SetConnMaxLifetime(time.Second * 30)
 	DB = db
 
-	// migration()
+	migration()
 
 }
 
-// type User struct {
-// 	gorm.Model
-// 	UserName       string
-// 	PasswordDigest string
-// 	Nickname       string
-// 	Status         string
-// 	Avatar         string `gorm:"size:1000"`
-// }
 
-// func migration() {
-// 	// 自动迁移模式
-// 	DB.AutoMigrate(&User{})
-// }
+func migration() {
+	// 自动迁移模式
+	DB.AutoMigrate(&User{})
+}

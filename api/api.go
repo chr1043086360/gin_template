@@ -20,7 +20,6 @@ import (
 	"project2019/middleware"
 	"project2019/service"
 
-	// "github.com/gin-gonic/autotls"
 	"github.com/gin-gonic/gin"
 )
 
@@ -72,22 +71,8 @@ func Api() *gin.Engine {
 		// ping接口用来做生死检查
 		v1.GET("/ping", service.Ping)
 
-		// 登陆接口
-		v1.POST("/login", service.Login)
-
-		// 获取路径参数
-
-		v1.GET("/param/:name", service.Param)
-
-		//post接口获取列表数据
-
-		v1.POST("/articlelist", service.ArticleList)
-
-		// 只绑定get数据
-		// v1.Any("/testing", service.FormDemo)
-
-		// 重定向
-		v1.GET("/redirect", service.Redirect)
+		// jwt认证获取用户
+		v1.GET("/auth/info", middleware.JwtAuth(),service.Info)
 
 	}
 	v2 := r.Group("/api/v2")

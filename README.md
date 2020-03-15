@@ -1,8 +1,9 @@
-# Pythoner 学习 Golang 写的不好请多多指正
+# Python To Golang
 
-> 之前一直从事 Django 框架开发，后来接触到到 Gin，iris，Sanic，Flask 等轻量级框架 因为 Gin 性能过于优秀（压测结果我放在了个人博客的文章里），So 决定主攻 Gin 框架
+> Gin脚手架
 
-# Gin 项目模板，持续更新
+---
+# Gin 项目模板
 
 - 配置 Golang 环境
 - 配置 goproxy
@@ -32,14 +33,6 @@ ES_CONF="hostip:9200"  # Elasticsearch
 - Golang 消费 ETCD
 - Golang 消费 ElasticSearch
 - Golang 七牛云对象存储 API
-- AND SOME
+- Golang Jwt+OAuth2.0认证
 
-# 未来 ADD 计划
 
-- Golang 实现经典算法
-- Golang 实现经典设计模式
-- 前端 Vue 项目
-- Golang 客户端访问 Python Server，Python 中实现简单机器学习，大数据等内容
-- Golang 和 Python 的爬虫
-- Hyperledger Fabric 联盟链 Golang 接口实现，以及链码开发模板
-- 一些不错的 Python、Golang 的小项目（脚本）
